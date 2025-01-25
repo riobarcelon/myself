@@ -1,50 +1,82 @@
-.top{
-    text-align: center
-    
-}
-
-.navigation {
-    text-align: center;
-    
-}
-
-.ulist{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-}
-li {
-    float: left;
-    float: unset;
-  }
-
-  li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  li a:hover {
-    background-color: #111;
-    overflow: hidden;
-  }
-
 .rio {
     width: 200px; height: 200px;
 
 }
 
-.myself{
+.myself {
     text-decoration: none;
 }
 
-.text{
+.text {
     
     text-underline-offset: 10px;
   }
 
+  .navbar {
+    background-color: rgb(350, 350, 350); box-shadow: 5px 15px 20px rgb(130, 128, 128); font-family: 'calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; padding-right: 15px; 
+  }
+  .navheader {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo {
+    font-size: 100px; font-weight: 750; color: rgb(132, 8, 174)
+  }
 
-  
+  li {
+    list-style: none; display: inline-block;
+    font-size: 30px;
+  }
+
+  li a {
+    background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Calibri','CerebriSans-Regular','-apple-system','system-ui','Roboto','sans-serif'; font-weight: bold;
+  padding: 7px 20px;
+  margin-right: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  }
+
+  a:hover {
+    box-shadow: rgba(15, 81, 214, 0.35) 0 -25px 18px -14px inset,rgba(17, 9, 240, 0.599) 0 1px 2px,rgb(14, 62, 184) 0 2px 4px,rgba(31, 9, 194, 0.963) 0 4px 8px,rgba(44, 115, 187, 0.25) 0 8px 16px,rgba(44, 92, 187, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+  a:active {
+    box-shadow: rgba(15, 81, 214, 0.35) 0 -25px 18px -14px inset,rgba(44, 104, 187, 0.25) 0 1px 2px,rgba(44, 84, 187, 0.25) 0 2px 4px,rgba(33, 7, 228, 0.25) 0 4px 8px,rgba(44, 115, 187, 0.25) 0 8px 16px,rgba(44, 92, 187, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: "riob.png";
+    background-size: cover;
+    background-position: right;
+    opacity: 0.25;
+  }
+
+  .prio {
+    position: absolute;
+  left: 1000px;
+  bottom: 150px;
+  text-align: right;
+  }
+
+  .riob {
+    float: left;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+  }
