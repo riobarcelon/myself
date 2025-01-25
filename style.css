@@ -1,22 +1,22 @@
-.rio {
-    width: 200px; height: 200px;
-
-}
 
 .myself {
     text-decoration: none;
-}
+  }
 
-.text {
-    
+  .text {
     text-underline-offset: 10px;
   }
 
   .navbar {
-    background-color: rgb(350, 350, 350); box-shadow: 5px 15px 20px rgb(130, 128, 128); font-family: 'calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; padding-right: 15px; 
+    background-color: rgb(350, 350, 350); 
+    box-shadow: 5px 15px 20px rgb(130, 128, 128); 
+    font-family: 'calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
+    padding-right: 15px; 
   }
   .navheader {
-    display: flex; align-items: center; justify-content: space-between;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
   }
   .logo {
     font-size: 100px; font-weight: 750; color: rgb(132, 8, 174)
@@ -28,11 +28,12 @@
   }
 
   li a {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   border-radius: 100px;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Calibri','CerebriSans-Regular','-apple-system','system-ui','Roboto','sans-serif'; font-weight: bold;
+  font-family: 'Calibri','CerebriSans-Regular','-apple-system','system-ui','Roboto','sans-serif'; 
+  font-weight: bold;
   padding: 7px 20px;
   margin-right: 5px;
   text-align: center;
@@ -54,29 +55,94 @@
     transform: scale(1.05) rotate(-1deg);
   }
 
-  &::before {
+  .riob {
+    max-width: 700px;
+    float: left;
+    margin-left: 1px;
     content: '';
-    position: absolute;
+    position: inherit;
     top: 100px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: "riob.png";
     background-size: cover;
     background-position: right;
-    opacity: 0.25;
+    opacity: 100px;
+
   }
 
-  .prio {
-    position: absolute;
-  left: 1000px;
-  bottom: 150px;
-  text-align: right;
+  .homi p{
+    position: inherit;
+    left: 1000px;
+    bottom: 0px;
+    right: 10px;
+    text-align: right;
   }
 
-  .riob {
-    float: left;
-    width: 60%;
-    position: absolute;
-    top: 50%;
+  .rio {
+    width: 480px; 
+    height: 550px;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  .about {
+    text-align: center;
+  }
+  
+  .about p {
+    text-align: center;
+  }
+
+
+  @import url("https://unpkg.com/papercss@1.9.2/dist/paper.css") layer(csspaper);
+
+.card-list:has(li:hover) li:not(:hover) {
+  filter: blur(4px)
+}
+
+  body {
+    min-height: 100vh;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(0deg, #e5decf, #e5decf 1px, #f6eee3 1px, #f6eee3);
+    padding: 1rem;
+    color: var(--text-color);
+  }
+
+  .card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    transition: all 150ms ease-in-out;
+  }
+  
+  li::before {
+    content: "";
+  }
+  
+  img {
+    display: block;
+    min-width: 0;
+    width: 100%;
+    margin-bottom: .6rem;
+  }
+
+  a {
+    background: none;
+  }
+  
+.paper {
+  padding: 1.5rem;
+}
+
+li a {
+  padding-inline-start: 1rem;
+}
