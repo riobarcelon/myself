@@ -1,12 +1,96 @@
+/* first */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* footer */
+footer{
+  background-color: #992fcc;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+/* footer icons */
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i {
+  font-size: 2em;
+  color: #3623ff;
+  opacity: 0.9;
+}
+.socialIcons a:hover {
+  background-color: none;
+  transition: 0.3s;
+}
+.socialIcons a:hover i {
+  background-color: none;
+  transition: 0.3s;
+}
+.footerNav {
+  margin: 30px 0;
+}
 
+/* footer nav unlist & list */
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a {
+  color: #000;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p {
+  color: white;
+}
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+/* footer */
+@media (max-width: 700px){
+  .footerNav {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
+/* myself */
 .myself {
     text-decoration: none;
   }
-
   .text {
     text-underline-offset: 10px;
   }
-
   .navbar {
     background-color: rgb(350, 350, 350); 
     box-shadow: 5px 15px 20px rgb(130, 128, 128); 
@@ -18,15 +102,14 @@
     align-items: center; 
     justify-content: space-between;
   }
+  /* logo(kiwii) */
   .logo {
     font-size: 100px; font-weight: 750; color: rgb(132, 8, 174)
   }
-
   li {
     list-style: none; display: inline-block;
     font-size: 30px;
   }
-
   li a {
   background-color: rgb(255, 255, 255);
   border-radius: 100px;
@@ -45,7 +128,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   }
-
+  /* hover header */
   a:hover {
     box-shadow: rgba(15, 81, 214, 0.35) 0 -25px 18px -14px inset,rgba(17, 9, 240, 0.599) 0 1px 2px,rgb(14, 62, 184) 0 2px 4px,rgba(31, 9, 194, 0.963) 0 4px 8px,rgba(44, 115, 187, 0.25) 0 8px 16px,rgba(44, 92, 187, 0.25) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
@@ -54,7 +137,7 @@
     box-shadow: rgba(15, 81, 214, 0.35) 0 -25px 18px -14px inset,rgba(44, 104, 187, 0.25) 0 1px 2px,rgba(44, 84, 187, 0.25) 0 2px 4px,rgba(33, 7, 228, 0.25) 0 4px 8px,rgba(44, 115, 187, 0.25) 0 8px 16px,rgba(44, 92, 187, 0.25) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
   }
-
+/* home */
   .riob {
     max-width: 700px;
     float: left;
@@ -68,9 +151,7 @@
     background-size: cover;
     background-position: right;
     opacity: 100px;
-
   }
-
   .homi p{
     position: inherit;
     left: 1000px;
@@ -78,7 +159,7 @@
     right: 10px;
     text-align: right;
   }
-
+  /* myself */
   .rio {
     width: 480px; 
     height: 550px;
@@ -87,30 +168,22 @@
     margin-left: auto;
     margin-right: auto;
   }
-
   .about {
     text-align: center;
-  }
-  
+  } 
   .about p {
     text-align: center;
   }
-
-
-  @import url("https://unpkg.com/papercss@1.9.2/dist/paper.css") layer(csspaper);
-
 .card-list:has(li:hover) li:not(:hover) {
   filter: blur(4px)
 }
-
   body {
     min-height: 100vh;
     background-size: 20px 20px;
-    background-image:  repeating-linear-gradient(0deg, #e5decf, #e5decf 1px, #f6eee3 1px, #f6eee3);
     padding: 1rem;
     color: var(--text-color);
   }
-
+  /* grid photo */
   .card-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -118,31 +191,41 @@
     margin: 0;
     padding: 0;
   }
-
   li {
     margin: 0;
     transition: all 150ms ease-in-out;
   }
-  
   li::before {
     content: "";
   }
-  
   img {
     display: block;
     min-width: 0;
     width: 100%;
     margin-bottom: .6rem;
   }
-
   a {
     background: none;
   }
-  
 .paper {
   padding: 1.5rem;
 }
-
 li a {
   padding-inline-start: 1rem;
+}
+/* card hover */
+.containerCard {
+  display: flex;
+}
+.cardCard {
+  border-radius: 20px;
+  margin-left: 10px;
+  height: 200px;
+  background-color: #3623ff;
+  flex: 1;
+  transition: 1.5s all ease;
+}
+.cardCard:hover {
+  flex: 1.2;
+  background-color: #992fcc;
 }
