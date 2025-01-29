@@ -78,12 +78,8 @@ footer{
     background-position: right;
     opacity: 100px;
   }
-  .homi p{
-    position: inherit;
-    left: 1000px;
-    bottom: 0px;
-    right: 10px;
-    text-align: right;
+  .box {
+    font-size: 30px;
   }
   /* myself */
   .rio {
@@ -249,120 +245,19 @@ li a {
   display: table;
 }
 /* Friends */
-.friend {
-  position: relative;
-  width: 25%;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: none;
 }
-.image {
-  opacity: 1;
-  display: block;
-  width: 50%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.flex-container > div {
+  background-color: #ffffff;
+  width: 350px;
+  margin: 10px;
   text-align: center;
+  line-height: 50px;
+  font-size: 20px;
 }
-.friend:hover .image {
-  opacity: 1;
-}
-.friend:hover .middle {
-  opacity: 1;
-}
-.friendname {
-  background-color: rgba(37, 4, 170, 0);
-  color: rgb(0, 0, 0);
-  font-size: 55px;
-  padding: 16px 32px;
-}
-
-.friend {
-  position: relative;
-  width: 25%;
-}
-.image {
-  opacity: 1;
-  display: block;
-  width: 50%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.friend:hover .image {
-  opacity: 1;
-}
-.friend:hover .middle {
-  opacity: 1;
-}
-.friendname {
-  background-color: rgba(37, 4, 170, 0);
-  color: rgb(0, 0, 0);
-  font-size: 55px;
-  padding: 16px 32px;
-}
-.friend {
-  position: relative;
-  width: 25%;
-}
-.image {
-  opacity: 1;
-  display: block;
-  width: 50%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.friend:hover .image {
-  opacity: 1;
-}
-.friend:hover .middle {
-  opacity: 1;
-}
-.friendname {
-  background-color: rgba(37, 4, 170, 0);
-  color: rgb(0, 0, 0);
-  font-size: 55px;
-  padding: 16px 32px;
-}
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-.friend::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 /* footer icons */
 .socialIcons {
   display: flex;
