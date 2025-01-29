@@ -1,6 +1,8 @@
 /* first */
-body{
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* footer */
 footer{
@@ -76,8 +78,12 @@ footer{
     background-position: right;
     opacity: 100px;
   }
-  .box {
-    font-size: 30px;
+  .homi p{
+    position: inherit;
+    left: 1000px;
+    bottom: 0px;
+    right: 10px;
+    text-align: right;
   }
   /* myself */
   .rio {
@@ -256,6 +262,7 @@ li a {
   line-height: 50px;
   font-size: 20px;
 }
+
 /* footer icons */
 .socialIcons {
   display: flex;
